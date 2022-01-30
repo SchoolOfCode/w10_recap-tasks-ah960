@@ -1,6 +1,9 @@
+import css from "./app.module.css";
+import LikeButton from "../LikeButton";
+
 function ArticleItem({ articles }) {
   return (
-    <div>
+    <div className={css.articleItem}>
       {articles.map((article) => {
         return (
           <article key={article.id} className="post">
@@ -8,7 +11,7 @@ function ArticleItem({ articles }) {
             {article.paragraphs.map((paragraph) => (
               <p key={paragraph.id}>{paragraph.text}</p>
             ))}
-            <button className="like-button">Like 👍</button>
+            <LikeButton />
             <section className="comment-section">
               {article.comments.map((comment) => {
                 return (
