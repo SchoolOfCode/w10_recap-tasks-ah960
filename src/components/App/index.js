@@ -7,7 +7,6 @@ function App() {
     <main className="App">
       <Header />
       <ArticleList articles={articles} />
-      <h1>PLACEHOLDER MY CODE ABOVE</h1>
     </main>
   );
 }

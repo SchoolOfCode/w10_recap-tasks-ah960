@@ -1,7 +1,6 @@
 function ArticleItem({ articles }) {
   return (
     <div>
-      <h2>hello i am article item</h2>
       {articles.map((article) => {
         return (
           <article key={article.id} className="post">
